@@ -41,7 +41,21 @@
 				<td><?= $row['name'] ?></td>
 				<td><a href="todo_task_edit.php"><img class="add-icon" src="images/edit.png" /></a</td>
 				<td><a href="todo_task_delete.php"><img class="add-icon" src="images/delete.png" /></a></td>
-				<td></td>
+        <td>
+					<?php 
+						//if is_complete is 0 that means the task is not complete
+						if ($row['is_complete'] == 0) {
+					?>
+						<img src="images/checkbox.png" />
+					<?php
+						} else {
+							// else is_complete is 1 which means the task is complete
+					?>
+						<img src="images/checkbox-checked.png" />
+					<?php
+						}
+					?>
+				</td>
 			</tr>
 		<?php 
 			}
