@@ -1,4 +1,3 @@
-
 <?php 
 	// Including the database connection file
 	require_once('config.php');
@@ -23,9 +22,9 @@
 			foreach ($result as $row) {
 		?>
 		<tr>
-			<td><?= $row['name'] ?></td>
-			<td><a href="todo_list_edit.php"><img class="add-icon" src="images/edit.png" /></a></td>
-			<td><a href="todo_list_delete.php"><img class="add-icon" src="images/delete.png" /></a></td>
+			<td><a href="todo_item.php?id=<?= $row['id'] ?>" ><?= $row['name'] ?></a></td>
+			<td><a href="todo_list_edit.php?id=<?= $row['id'] ?>"><img class="add-icon" src="images/edit.png" /></a></td>
+			<td><a href="todo_list_delete.php?id=<?= $row['id'] ?>"><img class="add-icon" src="images/delete.png" /></a></td>
 		</tr>
 		<?php 
 			}
