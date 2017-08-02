@@ -6,9 +6,11 @@
 <html>
 <head>
 	<title>Todo List Project</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
-	<a href="todo_list_add.php"><img class="add-icon" src="images/add.png" /></a>
+  <h1>Todolist Project</h1>
+	<a href="todo_list_add.php"><img class="add-icon" src="images/add.png" /></a><br >
 	<table border="1">
 		<tr>
 			<th>Todo List Name</th>

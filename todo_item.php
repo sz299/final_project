@@ -28,10 +28,11 @@
 <html>
 <head>
 	<title>Todo List Project</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
 	<h1><?=$row['name'] ?></h1>
- 	<a href="todo_task_add.php?id=<?=$todolist_id?>"><img class="add-icon" src="images/add.png" /></a>
+ 	<a href="todo_task_add.php?id=<?=$todolist_id?>"><img class="add-icon" src="images/add.png" /></a><br />
 	<table border="1">
 		<tr>
 			<th>Task Name</th>

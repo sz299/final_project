@@ -15,6 +15,7 @@
 <html>
 <head>
 	<title>Todo List Project</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
 	<h1>Add</h1>

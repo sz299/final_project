@@ -19,8 +19,10 @@
 <html>
 <head>
 	<title>Todo List Project</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
+  <h1>Delete Todolist</h1>
 	<div>
 		Are you sure you want to delete this todo list? <br/>
 		<a href="todo_list_delete.php?id=<?=$item_id ?>&confirm=1">YES</a> &nbsp;&nbsp;&nbsp;&nbsp;<a href="index.php">NO</a>
