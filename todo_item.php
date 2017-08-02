@@ -48,8 +48,8 @@
 		?>
 			<tr>
 				<td><?= $row['name'] ?></td>
-				<td><a href="todo_task_edit.php"><img class="add-icon" src="images/edit.png" /></a</td>
-				<td><a href="todo_task_delete.php"><img class="add-icon" src="images/delete.png" /></a></td>
+				<td><a href="todo_task_edit.php?id=<?=$todolist_id ?>&task_id=<?=$row['id'] ?>"><img class="add-icon" src="images/edit.png" /></a</td>
+				<td><a href="todo_task_delete.php?id=<?=$todolist_id ?>&task_id=<?=$row['id'] ?>"><img class="add-icon" src="images/delete.png" /></a></td>
         <td>
 					<?php 
 						//if is_complete is 0 that means the task is not complete
