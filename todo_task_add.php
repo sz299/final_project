@@ -16,6 +16,7 @@
 		$task_name = $_POST['task_name'];
     //Insert the task name into the database
 		$db->query("INSERT INTO `todo_tasks` (`name`,`todolist_id`,`is_complete`) VALUES ('$task_name','$item_id','0')");
+		header('location: todo_item.php?id='.$item_id);
 	}
 ?>
 <!DOCTYPE html>

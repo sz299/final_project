@@ -17,6 +17,7 @@
 	if (!empty($_POST['task_name'])) {
 		$updated_name = $_POST['task_name'];
 		$db->query("UPDATE `todo_tasks` SET `name`='$updated_name' WHERE `id`=".$task_id);
+		header('location: todo_item.php?id='.$todolist_id);
 	}
 
 	//Get the information related to this task

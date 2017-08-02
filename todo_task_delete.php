@@ -15,6 +15,7 @@
 
 	if(!empty($_GET['confirm'])) {
 		$db->query("DELETE FROM `todo_tasks` WHERE `id`=".$task_id);
+		header('location: todo_item.php?id='.$todolist_id);
 	}
 ?>
 <!DOCTYPE html>
